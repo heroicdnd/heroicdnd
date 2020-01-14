@@ -1,12 +1,27 @@
+.bold {
+	font-weight:bold;
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 #charEnterContainer {
 	width: 80%;
 	margin: 0 auto;
+	display: block;
+}
+#charEnterContainer .enterHeader {
+	display: block;
 }
 #charEnter .enterHeader div {
 	float: left;
 }
 #charEnter .enterHeader label {
 	font-size: 18px;
+	font-weight: bold;
 }
 #charEnter .enterHeader input {
 	border: 0;
@@ -16,12 +31,15 @@
 }
 .headerLeft {
 	width: 40%;
+	float: left;
 }
 .headerMid {
 	width: 40%;
+	float: left;
 }
 .headerRight {
 	width: 20%;
+	float: left;
 }
 .headerRight img {
 	width: 100%;
@@ -30,6 +48,50 @@
 .required {
 	font-size: 16px;
 	color: red;
+}
+.twoToOneContainer {
+	width: 100%;
+	display: block;
+}
+.left {
+	width: 60%;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+.right {
+	width: 40%;
+	display: block;
+	overflow: hidden;
+	float: right;
+}
+.oneBox {
+	width: 50%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.twoBox {
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	padding: 0 15px;
+}
+.abilityTable ul {
+	padding: 0;
+	margin: 0;
+}
+.abilityTable ul li {
+	text-align: center;
+	color: #FFF;
+	width: 50px;
+	height: 32px;
+	margin: 2px;
+	background: #000;
+	display: inline-block;
 }
 .powerContainer {
 	width:80%;
@@ -70,4 +132,40 @@
 	padding: 1px 5px 0px 5px;
 	width: 340px;
 	height: 16px;
+}
+.powerName {
+	font-weight: bold;
+	float: left;
+}
+.powerRank {
+	float: right;
+}
+.powerFlavor {
+	background-color: #DDDDCC;
+	background-image: url('images/bg_350.jpg');
+	font-style: italic;
+	padding: 1px 0px 3px 5px;
+}
+.powerAttributes {
+	padding-left: 5px;
+}
+.noBG {
+	padding: 0px 0px 0px 5px;
+	background-image: none;
+}
+.shadedBG {
+	padding: 0px 0px 0px 5px;
+	background-image: url('images/bg_350.jpg');
+}
+.pSecondary {
+	padding: 0 0 0 15px;
+}
+.categoryHeader {
+	color: #FFF;
+	font-weight: normal;
+	background-color: #28435a;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 0 50px 0 0;
+	padding-left: 6px;
 }

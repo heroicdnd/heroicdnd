@@ -5,3 +5,16 @@
 	width: 33%;
 	float: left;
 }
+#charEnter .enterHeader label {
+	font-size: 18px;
+}
+#charEnter .enterHeader input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+}
+.headerRight img {
+	width: 100%;
+	overflow: hidden;
+}

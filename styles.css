@@ -1,8 +1,8 @@
 #charEnterContainer {
-	
+	width: 80%;
+	margin: 0 auto;
 }
 #charEnter .enterHeader div {
-	width: 33%;
 	float: left;
 }
 #charEnter .enterHeader label {
@@ -14,6 +14,15 @@
 	background: transparent;
 	border-bottom: 1px solid black;
 }
+.headerLeft {
+	width: 40%;
+}
+.headerMid {
+	width: 40%;
+}
+.headerRight {
+	width: 20%;
+}
 .headerRight img {
 	width: 100%;
 	overflow: hidden;
@@ -21,4 +30,44 @@
 .required {
 	font-size: 16px;
 	color: red;
+}
+.powerContainer {
+	width:80%;
+	clear: both;
+	padding: 18px 0;
+	margin: 0 auto;
+}
+.powerContainer h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+.power {
+	width: 33%;
+	float: left;
+	font-family: arial;
+	font-size: 8pt;
+	width: 350px;
+	line-height: 10.5pt;
+	padding: 10px
+}
+.atwill {
+	background-color: #407040;
+	color: #FFFFFF;
+	padding: 1px 5px 0px 5px;
+	width: 340px;
+	height: 16px;
+}
+.encounter {
+	background-color: #704040;
+	color: #FFFFFF;
+	padding: 1px 5px 0px 5px;
+	width: 340px;
+	height: 16px;
+}
+.daily {
+	background-color: #404040;
+	color: #FFFFFF;
+	padding: 1px 5px 0px 5px;
+	width: 340px;
+	height: 16px;
 }

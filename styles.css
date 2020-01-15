@@ -54,19 +54,27 @@
 	display: block;
 }
 .left {
-	width: 60%;
+	width: 100%;
 	display: block;
 	overflow: hidden;
 	float: left;
 }
 .right {
-	width: 40%;
+	width: 100%;
 	display: block;
 	overflow: hidden;
 	float: right;
 }
+@media only screen and (min-width:1310px) {
+	.left {
+		width: 60%;
+	}
+	.right {
+		width: 40%;
+	}
+}
 .oneBox {
-	width: 50%;
+	width: 100%;
 	float: left;
 	display: block;
 	overflow: hidden;
@@ -79,6 +87,12 @@
 	display: block;
 	overflow: hidden;
 	padding: 0 15px;
+	box-sizing:border-box;
+}
+@media only screen and (min-width: 860px) {
+	.oneBox {
+		width: 50%;
+	}
 }
 .abilityTable ul {
 	padding: 0;
@@ -90,20 +104,30 @@
 	height: 28px;
 	line-height: 28px;
 	margin: 1px;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: bold;
 	display: inline-block;
+}
+@media only screen and (min-width:1310px) {
+	.abilityTable ul li {
+		font-size: 12px;
+	}
 }
 #abilityKeys {
 	width: 100%;
 	display: inline-block;
 }
 #abilityKeys li {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 	display: inline-block;
 	height: 14px;
 	line-height: 18px;
+}
+@media only screen and (min-width: 860px) {
+	#abilityKeys li {
+		font-size: 14px;
+	}
 }
 #abilityKeyOne {
 	width: 33%;
@@ -120,10 +144,28 @@
 }
 #abilityKeyOne li:nth-child(odd) {
 	clear: left;
-	width: 32px;
+	width: 46%;
 }
 #abilityKeyOne li:nth-child(even) {
-	width: 34px;
+	width: 40%;
+}
+@media only screen and (min-width:860px) {
+	#abilityKeyOne li:nth-child(odd) {
+		clear: left;
+		width: 42%;
+	}
+	#abilityKeyOne li:nth-child(even) {
+		width: 38%;
+	}
+}
+@media only screen and (min-width:1310px) {
+	#abilityKeyOne li:nth-child(odd) {
+		clear: left;
+		width: 32px;
+	}
+	#abilityKeyOne li:nth-child(even) {
+		width: 34px;
+	}
 }
 #abilityKeyTwo {
 	width: 53%;
@@ -133,10 +175,15 @@
 }
 #abilityKeyTwo li {
 	display: inline-block;
-	width: 34px;
+	width: 25%;
 	float: left;
 	margin: 2px 0;
 	list-style-type: none;
+}
+@media only screen and (min-width:1310px) {
+	#abilityKeyTwo li {
+		width: 34px;
+	}
 }
 #abilityKeyThree {
 	width: 14%;
@@ -147,11 +194,16 @@
 #abilityKeyThree li {
 	display: inline-block;
     vertical-align: middle;
-	width: 36px;
+	width: 100%;
 	float: left;
 	margin: 2px;
 	list-style-type: none;
 	vertical-align: middle;
+}
+@media only screen and (min-width: 1310px) {
+	#abilityKeyThree {
+		width: 36px;
+	}
 }
 #abilityTwoCell {
 	width: 33%;
@@ -161,7 +213,6 @@
 }
 #abilityTwoCell li {
 	display: inline-block;
-	width: 30px;
 	float: left;
 	border: 1px solid #000;
 	margin: 2px;
@@ -169,14 +220,36 @@
 }
 #abilityTwoCell li:nth-child(odd) {
 	clear: left;
-	width: 32px;
+	width: 46%;
 	background: #000;
 	color: #FFF;
 }
 #abilityTwoCell li:nth-child(even) {
 	border-width: 1px 8px 1px 1px;
 	border-radius: 1px 5px 5px 1px;
-	width: 34px;
+	width: 40%;
+}
+@media only screen and (min-width:860px) {
+	#abilityTwoCell li:nth-child(odd) {
+		clear: left;
+		width: 42%;
+	}
+	#abilityTwoCell li:nth-child(even) {
+		width: 38%;
+	}
+}
+@media only screen and (min-width:1310px) {
+	#abilityTwoCell li:nth-child(odd) {
+		clear: left;
+		width: 32px;
+		background: #000;
+		color: #FFF;
+	}
+	#abilityTwoCell li:nth-child(even) {
+		border-width: 1px 8px 1px 1px;
+		border-radius: 1px 5px 5px 1px;
+		width: 34px;
+	}
 }
 #abilityFourCell {
 	width: 54%;
@@ -185,16 +258,24 @@
 	box-sizing: border-box;
 }
 #abilityFourCell li {
-	display: inline-block;
-	width: 34px;
+	display: block;
+	width: 23%;
 	float: left;
 	border: 1px solid #000;
 	border-right: 0;
-	margin: 2px 0;
+	margin: 2px 0 2px 2px;
 	list-style-type: none;
+}
+@media only screen and (min-width:1310px) {
+	#abilityFourCell li {
+		width: 34px;
+	}
 }
 #abilityFourCell li:nth-child(4n) {
 	border: 1px solid #000;
+}
+#abilityFourCell li:nth-child(4n+1) {
+	clear: both;
 }
 #abilityOneCell {
 	width: 13%;
@@ -205,7 +286,7 @@
 #abilityOneCell li {
 	display: inline-block;
     vertical-align: middle;
-	width: 36px;
+	width: 100%;
 	height: 30px;
 	float: left;
 	border: 2px solid #000;
@@ -213,6 +294,11 @@
 	box-sizing: border-box;
 	list-style-type: none;
 	vertical-align: middle;
+}
+@media only screen and (min-width: 1310px) {
+	#abilityOneCell li {
+		width: 36px;
+	}
 }
 .powerContainer {
 	width:80%;

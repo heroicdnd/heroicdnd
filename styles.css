@@ -108,6 +108,16 @@
 	font-weight: bold;
 	display: inline-block;
 }
+.abilityTable ul li input {
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	font-size: 18px;
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
 @media only screen and (min-width:1310px) {
 	.abilityTable ul li {
 		font-size: 12px;
@@ -183,6 +193,7 @@
 @media only screen and (min-width:1310px) {
 	#abilityKeyTwo li {
 		width: 34px;
+		margin: 2px;
 	}
 }
 #abilityKeyThree {
@@ -249,6 +260,8 @@
 		border-width: 1px 8px 1px 1px;
 		border-radius: 1px 5px 5px 1px;
 		width: 34px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 }
 #abilityFourCell {
@@ -269,6 +282,8 @@
 @media only screen and (min-width:1310px) {
 	#abilityFourCell li {
 		width: 34px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 }
 #abilityFourCell li:nth-child(4n) {
@@ -298,6 +313,8 @@
 @media only screen and (min-width: 1310px) {
 	#abilityOneCell li {
 		width: 36px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 }
 .powerContainer {

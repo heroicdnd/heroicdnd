@@ -317,6 +317,40 @@
 		font-weight: bold;
 	}
 }
+.hpContainer div {
+	display: block;
+	float: left;
+	margin: auto;
+}
+.hpMax {
+	width: 31%;
+	height: 50px;
+	background-color: green;
+}
+.hpBloodied {
+	width: 23%;
+	height: 50px;
+	background-color: yellow;
+}
+.surgeValue {
+	width: 23%;
+	height: 50px;
+	background-color: cyan;
+}
+.surgeDay {
+	width: 23%;
+	height: 50px;
+	background-color: maroon;
+}
+.hpCurrent {
+	
+}
+.hpTemp {
+	
+}
+.hpSurges {
+	
+}
 .powerContainer {
 	width:80%;
 	clear: both;

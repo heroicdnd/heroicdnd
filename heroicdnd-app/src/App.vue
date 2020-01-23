@@ -12,7 +12,7 @@
             <v-icon>mdi-exit-to-app</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Open Temporary Drawer</v-list-item-title>
+            <v-list-item-title>User Login</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
